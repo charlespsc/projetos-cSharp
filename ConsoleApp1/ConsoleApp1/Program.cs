@@ -62,6 +62,31 @@ namespace ConsoleApp3 // Note: actual namespace depends on the project name.
                 Console.WriteLine("O numero é negativo");
             }
 
+            // OPERADORES LÓGICOS - ( && E ) ( || OU ) ( ! NÃO )
+            int numeroSeLogico = 8;
+
+            if (numeroSE == 8 && numeroSeLogico == 8)
+            {
+                Console.WriteLine("Está Correto");
+            }
+            else
+            {
+                Console.WriteLine("Incorreto!");
+            }
+
+            // Operador ! (NÃO)
+
+            bool verdade = true;
+
+            //if (verdade == true) 
+            if (!verdade)
+            {
+                Console.WriteLine("É Verdade esse bilete!");
+            }
+            else
+            {
+                Console.WriteLine("É Falso esse bilete!");
+            }
 
 
         }
