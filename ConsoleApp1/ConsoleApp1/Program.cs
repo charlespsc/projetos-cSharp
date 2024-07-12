@@ -49,6 +49,19 @@ namespace ConsoleApp3 // Note: actual namespace depends on the project name.
 
             Console.WriteLine("O Total é: " + totalN);
 
+            // ESTRUTURA CONDICIONAL e OPERADORES DE ATRIBUIÇÃO e COMPARAÇÃO
+
+            int numeroSE = 8;
+
+            if (numeroSE > 10)
+            {
+                Console.WriteLine("O numero é positivo");
+            }
+            else
+            {
+                Console.WriteLine("O numero é negativo");
+            }
+
 
 
         }
