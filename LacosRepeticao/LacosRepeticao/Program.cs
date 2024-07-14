@@ -3,12 +3,8 @@
     static void Main(string[] args)
     {
         // Estrutura de Repetição
-  
-        // Foreach
 
-        // Do (while)
-
-        // While
+        // While -> Pode não executar
         int numero = 0;
 
         while (numero <= 10)
@@ -23,5 +19,15 @@
             Console.WriteLine(i);
         }
 
+        // Do (while) -> Executa 1 ou mais vezes
+        int numero1 = 0;
+
+        do
+        {
+            Console.WriteLine(numero1);
+            numero1++;
+        } while (numero1 <= 10);
+
     }
+
 }
