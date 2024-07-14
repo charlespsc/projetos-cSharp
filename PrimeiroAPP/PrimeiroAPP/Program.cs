@@ -21,6 +21,7 @@ namespace PrimeiroApp
             {
                 pontuacao++;
             }
+            Console.WriteLine("O seu total de pontos foi: " + pontuacao);
 
             // Pergunta 2
             Console.WriteLine("Quanto é 10 + 5?\nEscreva sua resposta abaixo:");
@@ -30,6 +31,7 @@ namespace PrimeiroApp
             {
                 pontuacao++;
             }
+            Console.WriteLine("O seu total de pontos foi: " + pontuacao);
 
             // Pergunta 3
             Console.WriteLine("Quem é o CEO da Tesla?\nEscreva sua resposta abaixo:");
@@ -39,6 +41,7 @@ namespace PrimeiroApp
             {
                 pontuacao++;
             }
+            Console.WriteLine("O seu total de pontos foi: " + pontuacao);
 
             // Pergunta 4
             Console.WriteLine("Quem é o Instrutor do Senai?\nEscreva sua resposta abaixo:");
@@ -48,12 +51,13 @@ namespace PrimeiroApp
             {
                 pontuacao++;
             }
+            Console.WriteLine("O seu total de pontos foi: " + pontuacao);
 
             // Pergunta 5
-            Console.WriteLine("Quanto é 12.5 + 2?\nEscreva sua resposta abaixo:");
+            Console.WriteLine("Quanto é 12,5 + 2?\nEscreva sua resposta abaixo:");
             float resposta_5 = float.Parse(Console.ReadLine());
 
-            if (resposta_5 == 14.0f)
+            if (resposta_5 == 14.5f)
             {
                 pontuacao++;
             }
