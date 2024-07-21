@@ -10,12 +10,15 @@ namespace ConsoleAppArrays
             nomes = new string[5];
 
             nomes[0] = "Joana";
-            nomes[1] = "Joana";
-            nomes[2] = "Joana";
-            nomes[3] = "Joana";
-            nomes[4] = "Joana";
+            nomes[1] = "Roberto";
+            nomes[2] = "João";
+            nomes[3] = "Natália";
+            nomes[4] = "Ana";
 
-            Console.WriteLine(nomes[1]);
+            foreach (string nome in nomes) 
+            { 
+                Console.WriteLine(nome);
+            }
         }
     }
 }
