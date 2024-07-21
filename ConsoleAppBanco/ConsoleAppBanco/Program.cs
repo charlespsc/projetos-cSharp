@@ -15,16 +15,14 @@ namespace ConsoleAppBanco
             Agencia = agencia;
             Numero = numero;
 
-            if(TotalContasCriadas == 0)
+            try
             {
-                TaxaOperacao = 30;
-
                 TotalContasCriadas++;
-            } else if(TotalContasCriadas > 0)
+                TaxaOperacao = 30 / TotalContasCriadas;
+                Console.WriteLine("O resultado é " + TaxaOperacao);
+            } catch (DivideByZeroException)
             {
-                TaxaOperacao = 30 / (TotalContasCriadas + 1);
-
-                TotalContasCriadas++;
+                Console.WriteLine("Não podemos dividir por ZERO!");
             }
 
         }
@@ -37,10 +35,6 @@ namespace ConsoleAppBanco
             ContaCorrente conta = new ContaCorrente(9999, 123456);
             ContaCorrente conta2 = new ContaCorrente(8888, 654321);
             ContaCorrente conta3 = new ContaCorrente(7777, 123321);
-
-            Console.WriteLine(ContaCorrente.TotalContasCriadas);
-            Console.WriteLine(ContaCorrente.TaxaOperacao);
-            Console.ReadLine();
         }
     }
 }
